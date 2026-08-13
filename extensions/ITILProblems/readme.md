@@ -2,7 +2,7 @@
 
 A dark "mission control" style Qlik Sense visualization extension for tracking problem management KPIs — open problem volume, a status breakdown, top problem categories, and a clickable age band grid, all in one tile.
 
-![ITIL Problems](./assets/ITIL_Problems.png)
+![ITIL Problems extension](./assets/ITIL_Problems.png)
 
 ---
 
