@@ -8,13 +8,24 @@ A dark "mission control" style Qlik Sense visualization extension for tracking c
 
 ## 1. Install the Extension
 
-Before this shows up in Custom Objects, someone with the right permissions needs to install it on the tenant. It won't just materialize because you willed it into existence hard enough.
+Before this shows up in Custom Objects, someone with the right permissions needs to install it. It won't just materialize because you willed it into existence hard enough. This extension doesn't rely on anything Cloud-specific, so it works fine on either platform — the install mechanics just differ.
 
-1. In Qlik Cloud, go to **Management Console → Extensions** (or your space's extension settings, depending on tenant configuration).
+### Qlik Cloud
+
+1. Go to **Management Console → Extensions**.
 2. Click **Add extension** and upload the `ITILChanges_v{version}.zip` file — don't unzip it first, Qlik wants the whole package.
 3. Once uploaded, it's available to any app on that tenant/space that has permission to use it.
 
 If you're not a tenant admin, ping whoever manages your Qlik Cloud environment and hand them the zip.
+
+### Qlik Sense Enterprise on Windows (QSEoW)
+
+1. Open the **Qlik Management Console (QMC)** and go to **Extensions**.
+2. Click **Import**, browse to `ITILChanges_v{version}.zip`, and upload — again, keep it zipped.
+3. The extension will land in the shared extensions folder on the server (typically something like `C:\ProgramData\Qlik\Sense\CustomData\extensions\`) and become available across the site once the import completes.
+4. If it doesn't show up right away in Custom Objects on an already-open app, a hub/browser refresh usually does the trick.
+
+Either way, you'll need QMC/admin access to get it in the door — after that, it behaves identically regardless of platform.
 
 ## 2. Add It to a Sheet
 
@@ -65,3 +76,4 @@ Optional — lets you set a target sheet ID so the **Details** button in the hea
 
 - If you upgrade to a newer version of the extension and the properties look wrong or fields go blank, **delete the tile and drag a fresh one from Custom Objects** rather than re-importing the zip onto an existing tile. Qlik caches the old property schema on existing objects, and re-importing won't refresh it.
 - All expression fields work the same as any native Qlik chart — master measures, ad-hoc formulas, and set analysis are all fair game.
+
