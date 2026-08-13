@@ -1,0 +1,8 @@
+{
+  "name": "ITIL Incidents",
+  "description": "ITIL 5 Service Intelligence — Incidents KPI panel with priority breakdown, status donut, and 7-day trend sparkline. Part of the QlikDork ITIL Accelerator suite.",
+  "icon": "puzzle",
+  "type": "visualization",
+  "version": "1.6.0",
+  "author": "QlikDork — Data Cathedral"
+}
