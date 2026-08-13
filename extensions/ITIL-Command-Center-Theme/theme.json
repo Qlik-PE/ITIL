@@ -1,0 +1,637 @@
+{
+  "_inherit": false,
+  "_cards": false,
+  "_variables": {
+    "@bright":   "#06FFB1",
+    "@core":     "#00E676",
+    "@mid":      "#00C853",
+    "@dark":     "#007A3D",
+    "@deepBg":   "#001A12",
+    "@cardBg":   "#040d08",
+    "@quadBg":   "#020a04",
+
+    "@textPrimary":   "#E8FFF4",
+    "@textSecondary": "#6FA98C",
+    "@textMuted":     "#3D6B54",
+
+    "@p1Critical": "#ff3b3b",
+    "@p2High":     "#ff8c00",
+    "@p3Medium":   "#ffd700",
+    "@p4Low":      "#4488ff",
+    "@p5Grey":     "#9e9e9e",
+
+    "@stripeBg":     "#123D2A",
+    "@excludedBg":   "#4A4A4A",
+    "@selExclBg":    "#707070",
+    "@objectBorder": "rgba(0, 200, 83, 0.055)",
+
+    "@fontFamily": "'Segoe UI', Arial, sans-serif",
+    "@fontSmall":  "11px",
+    "@fontNormal": "12px",
+    "@fontTitle":  "15px"
+  },
+
+  "customStyles": [
+    { "cssRef": "theme.css", "classRef": "itil-cc-theme" }
+  ],
+
+  "color": "@textPrimary",
+  "fontSize": "@fontNormal",
+  "fontFamily": "@fontFamily",
+  "backgroundColor": "@cardBg",
+
+  "dataColors": {
+    "primaryColor": "@core",
+    "othersColor": "@p5Grey",
+    "errorColor": "@p1Critical",
+    "nullColor": "@textMuted",
+    "selected": "@bright",
+    "alternative": "@stripeBg",
+    "excluded": "@excludedBg",
+    "selectedExcluded": "@selExclBg",
+    "possible": "@quadBg"
+  },
+
+  "sheet": {
+    "title": {
+      "private": {
+        "titleBackgroundColor": "@deepBg",
+        "titleBackgroundGradientColor": "@quadBg"
+      },
+      "approved": {
+        "titleBackgroundColor": "@deepBg",
+        "titleBackgroundGradientColor": "@cardBg"
+      },
+      "published": {
+        "titleBackgroundColor": "@deepBg",
+        "titleBackgroundGradientColor": "@quadBg"
+      }
+    }
+  },
+
+  "object": {
+    "backgroundColor": "@cardBg",
+
+    "title": {
+      "main": {
+        "color": "@bright",
+        "fontSize": "@fontTitle",
+        "fontFamily": "@fontFamily"
+      },
+      "subTitle": {
+        "color": "@textSecondary",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      },
+      "footer": {
+        "color": "@textMuted",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily",
+        "backgroundColor": "@cardBg"
+      }
+    },
+
+    "label": {
+      "name": {
+        "color": "@textSecondary",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      },
+      "value": {
+        "color": "@textPrimary",
+        "fontSize": "@fontNormal",
+        "fontFamily": "@fontFamily"
+      }
+    },
+
+    "axis": {
+      "title": {
+        "color": "@textSecondary",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      },
+      "label": {
+        "name": {
+          "color": "@textSecondary",
+          "fontSize": "@fontSmall",
+          "fontFamily": "@fontFamily"
+        }
+      },
+      "line": {
+        "major": { "color": "@dark" },
+        "minor": { "color": "#0D2A1E" }
+      }
+    },
+
+    "grid": {
+      "line": {
+        "highContrast": { "color": "@mid" },
+        "major": { "color": "@dark" },
+        "minor": { "color": "#0D2A1E" }
+      }
+    },
+
+    "referenceLine": {
+      "label": {
+        "name": {
+          "color": "@bright",
+          "fontSize": "@fontSmall",
+          "fontFamily": "@fontFamily"
+        }
+      },
+      "outOfBounds": {
+        "color": "@textPrimary",
+        "backgroundColor": "@p1Critical",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      }
+    },
+
+    "legend": {
+      "title": {
+        "color": "@textSecondary",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      },
+      "label": {
+        "color": "@textSecondary",
+        "fontSize": "@fontSmall",
+        "fontFamily": "@fontFamily"
+      }
+    },
+
+    "kpi": {
+      "backgroundColor": "@cardBg",
+      "label": {
+        "name": {
+          "color": "@textSecondary",
+          "fontFamily": "@fontFamily"
+        },
+        "value": {
+          "fontFamily": "@fontFamily"
+        }
+      }
+    },
+
+    "gauge": {
+      "backgroundColor": "@cardBg",
+      "label": {
+        "value": {
+          "color": "@bright",
+          "fontSize": "34px"
+        }
+      }
+    },
+
+    "barChart": {
+      "outOfRange": { "color": "@dark" },
+      "label": {
+        "value": {
+          "color": "@textPrimary",
+          "fontSize": "@fontSmall"
+        }
+      }
+    },
+
+    "lineChart": {
+      "outOfRange": { "color": "@dark" },
+      "label": {
+        "value": {
+          "color": "@bright",
+          "fontSize": "@fontSmall"
+        }
+      }
+    },
+
+    "comboChart": {
+      "outOfRange": { "color": "@dark" },
+      "label": {
+        "value": { "color": "@textPrimary", "fontSize": "@fontSmall" }
+      }
+    },
+
+    "bulletChart": {
+      "outOfRange": { "color": "@dark" },
+      "label": {
+        "value": { "color": "@textPrimary", "fontSize": "@fontSmall" }
+      }
+    },
+
+    "histogram": {
+      "label": {
+        "value": { "color": "@textPrimary", "fontSize": "@fontSmall" }
+      }
+    },
+
+    "boxPlot": {
+      "box": {
+        "whisker": { "stroke": "@core" },
+        "line": { "stroke": "@core" },
+        "box": { "fill": "@dark", "stroke": "@core" }
+      }
+    },
+
+    "distributionPlot": {
+      "box": { "fill": "@dark" }
+    },
+
+    "scatterPlot": {
+      "label": {
+        "value": { "color": "@textPrimary", "fontSize": "@fontSmall" }
+      }
+    },
+
+    "pieChart": {
+      "axis": {
+        "title": { "fontSize": "@fontSmall" }
+      },
+      "label": {
+        "name": { "color": "@textSecondary", "fontSize": "@fontSmall" },
+        "value": { "color": "@textPrimary", "fontSize": "@fontSmall" }
+      }
+    },
+
+    "waterfallChart": {
+      "label": {
+        "value": { "fontSize": "@fontSmall" }
+      },
+      "value": {
+        "color": {
+          "default": "@textPrimary",
+          "dark": "@deepBg",
+          "light": "@bright"
+        }
+      },
+      "shape": {
+        "positiveValue": { "fill": "@core" },
+        "negativeValue": { "fill": "@p1Critical" },
+        "subtotal": { "fill": "@dark" },
+        "bridge": { "stroke": "@textSecondary" }
+      }
+    },
+
+    "treemap": {
+      "branch": {
+        "backgroundColor": "@dark",
+        "label": {
+          "color": "@textPrimary",
+          "fontSize": "@fontSmall"
+        }
+      },
+      "leaf": {
+        "label": { "fontSize": "@fontSmall" }
+      }
+    },
+
+    "mapChart": {
+      "backgroundColor": "@quadBg",
+      "legend": {
+        "title": { "color": "@textSecondary" },
+        "label": { "color": "@textSecondary" }
+      },
+      "label": {
+        "value": {
+          "dark": { "color": "@deepBg" },
+          "light": { "color": "@textPrimary" },
+          "fontSize": "@fontSmall"
+        }
+      }
+    },
+
+    "filterpane": {
+      "backgroundColor": "@quadBg",
+      "title": {
+        "main": {
+          "color": "@bright",
+          "fontSize": "@fontNormal",
+          "fontFamily": "@fontFamily"
+        }
+      }
+    },
+
+    "listBox": {
+      "backgroundColor": "@quadBg",
+      "title": {
+        "main": {
+          "color": "@bright",
+          "fontSize": "@fontNormal",
+          "fontFamily": "@fontFamily"
+        }
+      },
+      "content": {
+        "color": "@textPrimary",
+        "fontSize": "@fontNormal",
+        "fontFamily": "@fontFamily"
+      },
+      "dataColors": {
+        "selected": "@core",
+        "alternative": "@stripeBg",
+        "excluded": "@excludedBg",
+        "selectedExcluded": "@selExclBg",
+        "possible": "@quadBg"
+      }
+    },
+
+    "straightTableV2": {
+      "dimension": {
+        "label": {
+          "name": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontSmall",
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          },
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@textPrimary",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "measure": {
+        "label": {
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@core",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "total": {
+        "label": {
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          }
+        }
+      },
+      "null": {
+        "label": {
+          "value": {
+            "color": "@textMuted",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "grid": {
+        "lineClamp": 1,
+        "backgroundColor": "@cardBg",
+        "borderColor": "@dark",
+        "divider": { "borderColor": "@dark" },
+        "hover": {
+          "color": "@bright",
+          "backgroundColor": "#0D2A1E"
+        }
+      }
+    },
+
+    "pivotTableV2": {
+      "dimension": {
+        "label": {
+          "name": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontSmall",
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          },
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@textPrimary",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "measure": {
+        "label": {
+          "name": {
+            "color": "@textSecondary",
+            "backgroundColor": "@quadBg"
+          },
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@core",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "total": {
+        "label": {
+          "value": {
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          }
+        }
+      },
+      "null": {
+        "label": {
+          "value": {
+            "color": "@textMuted",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "grid": {
+        "lineClamp": 1,
+        "backgroundColor": "@cardBg",
+        "borderColor": "@dark",
+        "divider": { "borderColor": "@dark" }
+      }
+    },
+
+    "writeTable": {
+      "dimension": {
+        "label": {
+          "name": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontSmall",
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          },
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@textPrimary",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "measure": {
+        "label": {
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@core",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "total": {
+        "label": {
+          "value": {
+            "color": "@bright",
+            "backgroundColor": "@quadBg"
+          }
+        }
+      },
+      "null": {
+        "label": {
+          "value": {
+            "color": "@textMuted",
+            "backgroundColor": "@cardBg"
+          }
+        }
+      },
+      "grid": {
+        "backgroundColor": "@cardBg",
+        "divider": { "borderColor": "@dark" }
+      },
+      "hover": {
+        "color": "@bright",
+        "backgroundColor": "#0D2A1E"
+      },
+      "editableColumn": {
+        "label": {
+          "value": {
+            "fontFamily": "@fontFamily",
+            "fontSize": "@fontNormal",
+            "color": "@bright",
+            "backgroundColor": "#0D2A1E"
+          }
+        },
+        "inputFieldBackground": "@cardBg",
+        "inputFieldHoverColor": "#0D2A1E"
+      }
+    },
+
+    "tabContainer": {
+      "label": {
+        "value": {
+          "fontSize": "@fontNormal",
+          "fontFamily": "@fontFamily",
+          "color": "@textSecondary"
+        },
+        "textAlignment": "left"
+      },
+      "icon": {
+        "value": {
+          "color": "@textSecondary",
+          "fontSize": "@fontNormal"
+        }
+      },
+      "indicator": {
+        "selected": { "color": "@core" },
+        "hover": { "color": "@bright" }
+      },
+      "background": {
+        "hover": { "color": "rgba(6,255,177,0.06)" }
+      }
+    },
+
+    "textImage": {
+      "backgroundColor": "@cardBg",
+      "title": {
+        "main": {
+          "color": "@bright",
+          "fontSize": "@fontTitle",
+          "fontFamily": "@fontFamily"
+        }
+      }
+    }
+  },
+
+  "palettes": {
+    "data": [
+      {
+        "name": "ITIL Command Center",
+        "translation": "ITIL Command Center",
+        "propertyValue": "qd-cc-12",
+        "type": "row",
+        "scale": [
+          "#06FFB1",
+          "#00E676",
+          "#00C853",
+          "#007A3D",
+          "#ff3b3b",
+          "#ff8c00",
+          "#ffd700",
+          "#4488ff",
+          "#9e9e9e",
+          "#2196f3",
+          "#264D3B",
+          "#0D2A1E"
+        ]
+      },
+      {
+        "name": "QlikDork ITIL Priority",
+        "translation": "QlikDork ITIL Priority (P1-P5)",
+        "propertyValue": "qd-itil-priority",
+        "type": "row",
+        "scale": [
+          "#ff3b3b",
+          "#ff8c00",
+          "#ffd700",
+          "#4488ff",
+          "#9e9e9e"
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "name": "ITIL Command Center",
+        "colors": [
+          "none",
+          "#06FFB1",
+          "#00E676",
+          "#00C853",
+          "#007A3D",
+          "#001A12",
+          "#040d08",
+          "#020a04",
+          "#ff3b3b",
+          "#ff8c00",
+          "#ffd700",
+          "#4488ff",
+          "#9e9e9e",
+          "#E8FFF4"
+        ]
+      }
+    ]
+  },
+
+  "scales": [
+    {
+      "name": "Command Center Green Gradient",
+      "translation": "Command Center Green Gradient",
+      "type": "gradient",
+      "propertyValue": "sg",
+      "scale": [ "#001A12", "#06FFB1" ]
+    },
+    {
+      "name": "Command Center Green Classes",
+      "translation": "Command Center Green Classes",
+      "type": "class",
+      "propertyValue": "sc",
+      "scale": [ "#007A3D", "#00C853", "#00E676", "#06FFB1" ]
+    },
+    {
+      "name": "Command Center Risk Diverging",
+      "translation": "Command Center Risk Diverging (Red-Green)",
+      "type": "gradient",
+      "propertyValue": "dg",
+      "scale": [ "#ff3b3b", "#040d08", "#06FFB1" ]
+    },
+    {
+      "name": "Command Center Risk Classes",
+      "translation": "Command Center Risk Classes (Red-Green)",
+      "type": "class",
+      "propertyValue": "dc",
+      "scale": [ "#ff3b3b", "#ff8c00", "#ffd700", "#00C853", "#06FFB1" ]
+    }
+  ]
+}

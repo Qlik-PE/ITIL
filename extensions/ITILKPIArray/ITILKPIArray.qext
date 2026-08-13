@@ -1,0 +1,9 @@
+{
+  "name": "ITIL KPI Array",
+  "type": "visualization",
+  "description": "QlikDork Service Intelligence - stacked KPI ticker with current vs. previous value comparison, paginated by category, tag-filtered master measure selection.",
+  "icon": "chart",
+  "version": "1.2.0",
+  "author": "QlikDork",
+  "preview": "ITILKPIArray.png"
+}

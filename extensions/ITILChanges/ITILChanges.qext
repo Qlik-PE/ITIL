@@ -1,0 +1,10 @@
+{
+  "name": "ITILChanges",
+  "type": "visualization",
+  "version": "1.3.4",
+  "description": "ITIL 5 Service Intelligence — Changes KPI Panel. Q1 gear gauge (Planned Changes), Q2 Change Calendar, Q3 Change Risk donut, Q4 Upcoming Changes rotating ticker (configurable Days Ahead window, drills to Navigation target sheet on click).",
+  "preview": "ITILChanges.png",
+  "author": "QlikDork",
+  "icon": "gear",
+  "supernova": false
+}

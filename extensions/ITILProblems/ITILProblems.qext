@@ -1,0 +1,10 @@
+{
+  "name": "ITILProblems",
+  "type": "visualization",
+  "version": "1.2.0",
+  "description": "ITIL 5 Service Intelligence — Problems KPI Panel. Q1 magnifying-glass gauge (Open Problem Count), Q2 Status bar chart (dimension-only, reuses Open Problem Count as measure), Q3 Top Problem Categories donut, Q4 Age Band grid (4 fixed master-measure slots, click-to-select via Problem Age Band Field).",
+  "preview": "ITILProblems.png",
+  "author": "QlikDork",
+  "icon": "search",
+  "supernova": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ITIL Command Center",
+  "description": "Dark sci-fi command-center theme with neon green glow, matching the ITILIncidents and ITILChanges extensions.",
+  "type": "theme",
+  "version": "1.2.2",
+  "author": "QlikDork"
+}

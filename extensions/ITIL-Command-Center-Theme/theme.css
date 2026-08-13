@@ -1,0 +1,27 @@
+/* ITIL Command Center — sheet canvas grid
+   Matches the quadrant grid used inside ITILIncidents/ITILChanges/ITILProblems:
+   background-color: quadBg (#020a04)
+   grid lines: rgba(0,200,83,0.055), 18px tile
+*/
+.qvt-sheet,
+.qv-panel-sheet {
+  background-color: #020a04 !important;
+  background-image:
+    linear-gradient(rgba(0, 200, 83, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 83, 0.055) 1px, transparent 1px) !important;
+  background-size: 18px 18px !important;
+}
+
+/* Object border — default 1px outline using the border color from
+   ITILIncidents' .inc-ext container (rgba(0,230,118,0.25)).
+   Deliberately NOT !important: Qlik writes per-object Style panel
+   choices (Border > Outline) as inline styles, and inline beats an
+   external class rule on specificity alone. Keeping this non-important
+   lets a user's explicit Outline setting override this default, while
+   this rule still applies whenever no explicit Outline has been set.
+*/
+.qv-object,
+.qv-inner-object {
+  border: 1px solid rgba(0, 230, 118, 0.25);
+  box-sizing: border-box;
+}
