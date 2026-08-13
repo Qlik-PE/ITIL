@@ -2,7 +2,7 @@
 
 A dark "mission control" style Qlik Sense visualization extension that displays a paged, auto-rotating carousel of KPI cards — each with an overall value, a current-vs-previous comparison, and an automatically calculated variance. Unlike the other three ITIL extensions (Incidents, Problems, Changes), this one isn't locked to a single practice area — the panel title and badge are just text fields, so you can stand up a KPI Array for Incidents, Changes, Problems, or anything else you want to throw metrics at.
 
-See it in action: `assets/Changes_KPI_Array_Final.mp4`
+🎥 [Watch the KPI Array in action](https://github.com/Qlik-PE/ITIL/blob/main/extensions/ITILKPIArray/assets/Changes_KPI_Array_Final.mp4) — GitHub doesn't play video inline in rendered READMEs, but clicking through opens it in GitHub's own file viewer with a native player.
 
 ---
 
