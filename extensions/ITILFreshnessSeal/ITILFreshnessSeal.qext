@@ -1,0 +1,8 @@
+{
+  "name": "ITILFreshnessSeal",
+  "type": "visualization",
+  "author": "QlikDork",
+  "version": "2.0.0",
+  "icon": "puzzle",
+  "description": "Displays a data-freshness seal image whose URL, tier, and hours-old are entirely governed by app-side expressions -- no naming convention, hosting path, or SLA band is hardcoded in this extension. Image always scales to fit the tile. Optional live badge advances Hours Old and Last Refreshed every 60 seconds between real repaints; Tier and the image itself only change on an actual Qlik repaint."
+}
