@@ -6,9 +6,7 @@
 
 A single-purpose tile that displays a data-freshness "seal" image (Gold / Silver / Bronze / Black) plus an optional live-ticking badge showing how stale the data currently is. It's the visual capstone of the [ITIL 5 Service Intelligence Accelerator](../../) pipeline-observability story — the moment someone glances at a dashboard and goes "yep, that's fresh" or "uh oh."
 
-<p align="center">
-  <img src="./assets/Source_Gold_Freshness.png" alt="ITIL Freshness Seal" width="200">
-</p>
+<p align="center"> <img src="./assets/Source_Gold_Freshness.png" alt="Gold Freshness Seal" width="175"> <img src="./assets/Source_Silver_Freshness.png" alt="Silver Freshness Seal" width="175"> <img src="./assets/Source_Bronze_Freshness.png" alt="Bronze Freshness Seal" width="175"> <img src="./assets/Source_Black_Freshness.png" alt="Black Freshness Seal" width="1750"> </p>
 
 ## Design philosophy: this extension has no opinions
 
