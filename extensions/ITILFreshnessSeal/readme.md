@@ -6,6 +6,9 @@
 
 A single-purpose tile that displays a data-freshness "seal" image (Gold / Silver / Bronze / Black) plus an optional live-ticking badge showing how stale the data currently is. It's the visual capstone of the [ITIL 5 Service Intelligence Accelerator](../../) pipeline-observability story — the moment someone glances at a dashboard and goes "yep, that's fresh" or "uh oh."
 
+![ITIL Freshness Seal](./assets/Source_Gold_Freshness.png)
+
+
 ## Design philosophy: this extension has no opinions
 
 Earlier versions of this seal baked in assumptions — a hardcoded media-library path, a `Layer_Tier_Freshness.png` naming convention, even hand-typed Gold/Silver/Bronze hour thresholds duplicated from the app's real SLA table. That's the microwave version, and it bit us: the hardcoded thresholds drifted from the governed SLA table the first time someone updated one and not the other, and the ticker started disagreeing with the native subtitle about what tier we were even in.
