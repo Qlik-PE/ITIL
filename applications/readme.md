@@ -17,13 +17,13 @@ Each app hands off to the next purely through QVDs on disk — there's no live c
 
 ## 1. Upload the Applications
 
-All three `.qvf` files need to be uploaded as new applications on your target platform. The exact steps depend on where you're deploying.
+All four `.qvf` files need to be uploaded as new applications on your target platform. The exact steps depend on where you're deploying.
 
 ### Qlik Cloud
 
 1. In the hub, go to the space you want these apps to live in.
 2. Click **Add new** → **App**, then choose **Upload from file** (or drag-and-drop the `.qvf` directly onto the space).
-3. Repeat for all three `.qvf` files: **Load Data**, **Conform Data**, and **Service Intelligence**.
+3. Repeat for all three `.qvf` files: **Load Data**, **Conform Data**, **Service Intelligence**, and **Pipeline Pulse**.
 
 ### Qlik Sense Enterprise on Windows (QSEoW)
 
@@ -51,4 +51,4 @@ Each of the three apps has its own **Configuration** section (typically a set of
 
 ---
 
-Once all three apps are uploaded, the glossary is imported, and each app's Configuration section is filled in, run the apps in order — **Load Data → Conform Data → Service Intelligence** — and you should have a working pipeline end to end.
+Once all four apps are uploaded, the glossary is imported, and each app's Configuration section is filled in, run the apps in order — **Load Data → Conform Data → Service Intelligence → Pipeline Pulse ** — and you should have a working pipeline end to end.
