@@ -9,7 +9,7 @@ Three Qlik Sense applications that together make up the accelerator's data pipel
 | 1 | **Load Data** | Pulls raw data from ServiceNow and writes it out as Raw QVDs. |
 | 2 | **Conform Data** | Reads the Raw QVDs, translates them into the ITIL 5 common data model, adds the master calendar, and writes out Conform QVDs. |
 | 3 | **Service Intelligence** | Reads the Conform QVDs and powers the actual dashboards — includes the visualization theme and the ITIL extensions out of the box. |
-| 4 | **Pipeline Pulse** | Reads the metadata QVDs and visualizes the freshness of the pipeline |
+| 4 | **Pipeline Pulse** | Reads the metadata QVDs and visualizes the freshness of the pipeline. |
 
 Each app hands off to the next purely through QVDs on disk — there's no live connection between the three apps themselves.
 
